@@ -4,10 +4,16 @@ import Lup from "../assets/Lup.jpeg";
 import tic_tac_toe from "../assets/tic_tac_toe.png"
 import cloudy from "../assets/cloudy.png"
 
+
 const Projects = () => {
   return (
+    <div id="project">
+    <div  className="w-full flex flex-col items-center relative z-1 text-white p-12">
+    <h1 className="font-bold text-xl md:text-6xl text-white text-center p-12">Projects!</h1>
     <div className="w-full py-[10rem] px-4 bg-black text-white">
-      <div className="max-w-[1240px] mx-auto grid md:grid-cols-3 gap-8">
+ 
+      <div className="max-w-[1240px] mx-auto grid md:grid-cols-3 gap-12">
+        
         <div className="w-full shadow-lg border-2 border-gray-500 shadow-[#00df9a] flex flex-col p-4 my-4 rounded-lg hover:scale-105 duration-300">
           <img
             className="w-20 mx-auto mt-[-3rem]"
@@ -24,7 +30,7 @@ const Projects = () => {
           <div className="text-center ">
             <div className=" rounded-lg">
               <p className="font-bold  text-xl text-gray-200">Tech Stack</p>
-              <p className="text-gray-600">
+              <p className="text-[#00df9a]">
                 Android Studio, Figma, Firebase, Java
               </p>
             </div>
@@ -67,7 +73,7 @@ const Projects = () => {
           <div className="text-center ">
             <div className=" rounded-lg">
               <p className="font-bold  text-xl text-gray-200">Tech Stack</p>
-              <p className="text-gray-600">Reactjs, Figma</p>
+              <p className="text-[#00df9a]">Reactjs, Figma</p>
             </div>
             <h1 className="text-xl font-bold">Learnings</h1>
             <p className="py-2  mx-8 bt-8">Designing UI in Figma</p>
@@ -130,7 +136,7 @@ const Projects = () => {
           <div className="text-center ">
             <div className=" rounded-lg">
               <p className="font-bold  text-xl text-gray-200">Tech Stack</p>
-              <p className="text-gray-600">Reactjs, Figma</p>
+              <p className="text-[#00df9a]">Reactjs, Figma</p>
             </div>
             <h1 className="text-xl font-bold">Learnings</h1>
             <p className="py-2  mx-8 bt-8">State Management (Lifting State)</p>
@@ -193,7 +199,7 @@ const Projects = () => {
           <div className="text-center ">
             <div className=" rounded-lg">
               <p className="font-bold  text-xl text-gray-200">Tech Stack</p>
-              <p className="text-gray-600">HTML, CSS, JS</p>
+              <p className="text-[#00df9a]">HTML, CSS, JS</p>
             </div>
             <h1 className="text-xl font-bold">Learnings</h1>
             <p className="py-2  mx-8 bt-8">TimeOut function in JS</p>
@@ -250,7 +256,12 @@ const Projects = () => {
           </div>
         </div>
       </div>
+      
     </div>
+    
+    </div>
+    </div>
+
   );
 };
 

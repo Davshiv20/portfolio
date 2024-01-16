@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
-
+import wave_haikei_f from '../assets/wave_haikei_f.svg'
 const Contact = () => {
   const form = useRef();
 
@@ -18,9 +18,10 @@ const Contact = () => {
   };
 
   return (
-    <div className='w-full md:w-4/5 flex flex-col items-center relative z-1 text-white p-12'>
+    <div id="contact" >
+    <div className='w-full items-center text-white p-12'>
         <div className="text-white ">
-            <h1 className='text-5xl font-bold text-center'>Contact me!</h1>
+            <h1 className='text-6xl  font-bold text-center'>Contact me!</h1>
             <p className='text-gray-600 text-center text-xl p-2'>Any queries or Suggestions? or Project Collaborations are welcome!</p>
         <form ref={form} onSubmit={sendEmail} className="max-w-md mx-auto mt-10 p-6 bg-gray-800 rounded-md">
             <label className="block mb-2 text-lg font-semibold text-gray-300">Name</label>
@@ -35,6 +36,13 @@ const Contact = () => {
             <input type="submit" value="Send" className="w-full py-2 px-4 bg-[#00df9a] hover:bg-blue-600 text-white font-semibold rounded cursor-pointer" />
         </form>
         </div>
+        
+    </div>
+    <img
+        src={wave_haikei_f}
+        alt="wave"
+        className="w-full"
+        />
     </div>
   );
 };
