@@ -207,7 +207,7 @@ const Projects = () => {
               Using weather-api key
             </p>
             <p className="py-2 mx-8 bt-8">
-              Outputting Content Conditionallys
+              Outputting Content Conditionally
             </p>
             <div className="flex flex-col mx-auto w-40  gap-2  p-2 ">
               <a

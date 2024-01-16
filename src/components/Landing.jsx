@@ -18,7 +18,7 @@ const Landing = () => {
                     loop 
                     />
                  
-                 <p>, together.</p>
+                 <p>together.</p>
                  </p>
                
             </div>
