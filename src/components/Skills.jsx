@@ -1,9 +1,11 @@
 import React from 'react';
 import { skills } from './Data/constants';
+import wave_haikei2 from "../assets/wave_haikei2.svg"
 
 const Skills = () => {
   return (
-    <div id="skills" className="flex flex-col items-center relative z-1 text-white p-12">
+    <div>
+    <div id="skills" className="flex flex-col items-center relative z-1 text-white p-12 ">
       <div className="relative flex justify-between items-center flex-col w-full max-w-1100 gap-12">
         <div className="text-xl font-bold text-center mt-20 md:mt-12 md:text-5xl text-[#00df9a]">
           Skills
@@ -36,6 +38,12 @@ const Skills = () => {
         </div>
       </div>
     </div>
+    {/* <img
+        src={wave_haikei2}
+        alt="wave"
+        className="w-full"
+        /> */}
+        </div>
   );
 };
 

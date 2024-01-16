@@ -1,7 +1,8 @@
 import React from 'react'
-
+import wave_haikei4 from "../assets/wave_haikei4.svg"
 const Experience = () => {
   return (
+    <div>
    <div className='w-full bg-white flex flex-col items-center relative z-1 text-white p-12'>
     <h1 className='mx-auto text-5xl font-bold p-4 text-gray-500 pb-8'>Experience</h1>
     <ol class="relative border-s border-gray-200 dark:border-gray-700">                  
@@ -27,6 +28,12 @@ const Experience = () => {
             <p class="text-base font-normal text-gray-500 dark:text-gray-400">Get started with dozens of web components and interactive elements built on top of Tailwind CSS.</p>
         </li> */}
     </ol>
+</div>
+{/* <img
+        src={wave_haikei4}
+        alt="wave"
+        className="w-full"
+        /> */}
 </div>
 
   )
