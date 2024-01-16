@@ -1,6 +1,6 @@
 import React from 'react';
 import { skills } from './Data/constants';
-import wave_haikei2 from "../assets/wave_haikei2.svg"
+
 
 const Skills = () => {
   return (

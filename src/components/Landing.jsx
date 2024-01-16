@@ -1,6 +1,6 @@
 import React from 'react';
 import Typed from 'react-typed';
-import wave_haikei from "../assets/wave_haikei.svg";
+import wave_haikei_f from "../assets/wave_haikei_f.svg";
 
 const Landing = () => {
   return (
@@ -23,7 +23,7 @@ const Landing = () => {
         <button className='bg-[#00df9a] rounded-md w-[200px] font-medium my-6 mx-auto px-4 py-3 text-black'>Scroll</button>
         </div>
         <img
-        src={wave_haikei}
+        src={wave_haikei_f}
         alt="wave"
         className="w-full"
         />
