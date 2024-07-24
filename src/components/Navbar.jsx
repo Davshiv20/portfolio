@@ -59,7 +59,7 @@ const Navbar = () => {
               <NavLink to="home"  smooth={true} duration={500} className="p-4 border-white" onClick={() => setNav(false)}>
                 Home
               </NavLink>
-              <NavLink to="about" smooth={true} duration={500} className="p-4 hover:bg-gray-800 rounded-lg"  onClick={() => setNav(false)}>
+              <NavLink to="about" smooth={true} duration={500} className="p-4 hover:bg-[#4522a0] rounded-lg"  onClick={() => setNav(false)}>
                 About
               </NavLink>
               <NavLink to="skills" smooth={true} duration={500} className="p-4 hover:bg-gray-800 rounded-lg"  onClick={() => setNav(false)}>
@@ -97,7 +97,7 @@ const NavLink = ({ to, children, onClick }) => (
     to={to}
     smooth={true}
     duration={500}
-    className="p-4 ease-in-out duration-500 border-gray-700 hover:bg-gray-800 rounded-lg"
+    className="p-4 ease-in-out duration-500 border-gray-700 hover:bg-[#371b7f] rounded-lg"
     onClick={onClick}
   >
     {children}
