@@ -7,10 +7,10 @@ import cloudy from "../assets/cloudy.png"
 
 const Projects = () => {
   return (
-    <div id="project">
+    <div id="project" className="inset-0 -z-10 h-full w-full items-center py-24 [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)]">
     <div  className="w-full flex flex-col items-center relative z-1 text-white p-12">
-    <h1 className="font-bold text-xl md:text-6xl text-white text-center p-12">Projects!</h1>
-    <div className="w-full py-[10rem] px-4 bg-black text-white">
+    <h1 className="font-bold text-xl md:text-6xl text-[#00fd9a] text-center p-12">Projects and Work</h1>
+    <div className="w-full py-[10rem] px-4 text-white">
  
       <div className="max-w-[1240px] mx-auto grid md:grid-cols-3 gap-12">
         
