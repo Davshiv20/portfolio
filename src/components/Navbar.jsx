@@ -51,11 +51,11 @@ const Navbar = () => {
             {!nav ?  <AiOutlineMenu size={20} /> : <AiOutlineClose size={20} />}
           </div>
           <div
-            className={` fixed top-40 left-5 h-full backdrop-blur-lg hover:backdrop-blur-lg backdrop-hue-rotate-60  md:relative md:flex  md:h-auto md:w-auto md:bg-transparent md:ml-auto active:shadow-lg ${
+            className={` fixed top-40 left-5 h-full backdrop-blur-lg hover:backdrop-blur-lg backdrop-hue-rotate-120a  md:relative md:flex  md:h-auto md:w-auto md:bg-transparent md:ml-auto active:shadow-lg ${
               nav ? "flex" : "hidden"
             } ` }
           >
-            <div className="flex flex-col rounded-lg md:flex-row md:items-center">
+            <div className="flex flex-col rounded-lg md:flex-row md:items-center ">
               <NavLink to="home"  smooth={true} duration={500} className="p-4 border-white" onClick={() => setNav(false)}>
                 Home
               </NavLink>
@@ -79,12 +79,12 @@ const Navbar = () => {
         </>
       )}
       {!isSmallScreen && (
-        <div className="md:flex hidden">
+        <div className="md:flex hidden ">
           <NavLink to="home">Home</NavLink>
           <NavLink to="about">About</NavLink>
           <NavLink to="skills">Skills</NavLink>
           <NavLink to="experience">Experience</NavLink>
-          <NavLink to="project">Project</NavLink>
+          <NavLink to="project">Projects</NavLink>
           <NavLink to="contact">Contact</NavLink>
         </div>
       )}

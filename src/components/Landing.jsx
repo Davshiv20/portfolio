@@ -1,8 +1,9 @@
 import React from "react";
 import Typed from "react-typed";
 import { motion } from "framer-motion";
-import wave_haikei_f from "../assets/wave_haikei_f.svg";
-import github from "../assets/github.png";
+import {
+  FaGithubSquare,
+} from "react-icons/fa";
 
 const Landing = () => {
   // Animation variants
@@ -25,7 +26,7 @@ const Landing = () => {
   return (
     <div>
       <motion.div
-        className="inset-0 -z-10 h-full w-full items-center py-24 [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)]"
+        className="inset-0 -z-10 h-full w-full items-center py-12 [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)]"
         initial="hidden"
         animate="visible"
         variants={containerVariants}
@@ -67,32 +68,34 @@ const Landing = () => {
             className="flex justify-center  mt-6"
             variants={containerVariants}
           >
-            <motion.button
-              className="bg-[#00df9a] rounded-md w-[200px] font-medium mx-auto px-4 py-3 text-black"
-              whileHover="hover"
-              variants={buttonVariants}
-            >
-              <a
-                href="https://drive.google.com/file/d/1aYiYv-CtChGs_zWMIEXmhas-I8joCtT6/view?usp=sharing"
-                target="_blank"
+            <div className="flex md:flex-row lg:flex-row flex-col justify-between ">
+              <motion.button
+                className="bg-[#00df9a] rounded-md w-[200px] font-medium  mx-4 px-4 m-2 py-3 text-black"
+                whileHover="hover"
+                variants={buttonVariants}
               >
-                Resume
-              </a>
-            </motion.button>
-            <motion.button
-              className="bg-[#00df9a] rounded-md w-[200px] font-medium mx-auto px-4 py-3 text-black flex items-center justify-center"
-              whileHover="hover"
-              variants={buttonVariants}
-            >
-              <a
-                href="https://github.com/Davshiv20"
-                target="_blank"
-                className="flex items-center justify-center"
+                <a
+                  href="https://drive.google.com/file/d/1aYiYv-CtChGs_zWMIEXmhas-I8joCtT6/view?usp=sharing"
+                  target="_blank"
+                >
+                  Resume
+                </a>
+              </motion.button>
+              <motion.button
+                className="bg-[#00df9a] rounded-md w-[200px] font-medium mx-4 px-4 py-3 text-black m-2 flex items-center justify-center"
+                whileHover="hover"
+                variants={buttonVariants}
               >
-                <img src={github} alt="GitHub" className="w-6 h-6 mr-2" />
-                GitHub
-              </a>
-            </motion.button>
+                <a
+                  href="https://github.com/Davshiv20"
+                  target="_blank"
+                  className="flex items-center justify-center"
+                >
+          <FaGithubSquare  size={40} className=""  />
+          GitHub
+                </a>
+              </motion.button>
+            </div>
           </motion.div>
         </div>
       </motion.div>
